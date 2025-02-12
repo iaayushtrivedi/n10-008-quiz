@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f2f5; /* Light grey background */
+}
+
+.container {
+    background-color: white; /* White background for the container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #87CEEB; /* Sky blue background for buttons */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00BFFF; /* Darker sky blue on hover */
+}
+
+button:disabled {
+    background-color: #cccccc; /* Grey for disabled buttons */
+    cursor: not-allowed;
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%; /* Full width for better responsiveness */
+    max-width: 300px; /* Limit max width */
+}
+
+.answer {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e9ecef; /* Light grey for answer box */
+    border-radius: 4px;
+    display: none;
+}
+
+.options {
+    margin-top: 10px;
+}
+
+.option {
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #f8f9fa; /* Light grey for options */
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.option:hover {
+    background-color: #e0f7fa; /* Light sky blue on hover */
+}
+
+.option.selected {
+    background-color: #cce5ff; /* Light blue for selected option */
+    border-color: #b8daff;
+}
+
+.option.correct {
+    background-color: #d4edda; /* Light green for correct answer */
+    border-color: #c3e6cb;
+}
+
+.option.incorrect {
+    background-color: #f8d7da; /* Light red for incorrect answer */
+    border-color: #f5c6cb;
+}
+
+.score {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #28a745; /* Green for score */
+}
+
+.timer {
+    font-size: 16px;
+    color: #dc3545; /* Red for timer */
+    margin-bottom: 10px;
+}
+
+#quiz {
+    display: none;
+}
+
+#timerOption {
+    display: none;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #e9ecef; /* Light grey for progress bar */
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #87CEEB; /* Sky blue for progress fill */
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    input[type="text"] {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
